@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int n;
+	cin >> n;
+	while(n)
+	{
+		int cost_a,cost_b,np,pa=0,pb=0 ;
+		cin >> cost_a >> cost_b >> np;
+		int a ,b;
+		int max = cost_a > cost_b ? cost_a:cost_b;
+		int min = cost_a < cost_b ? cost_a:cost_b;
+		for(int i=0 ; i<np ; i++)
+		{
+				cin>>a >>b;
+				pa += a;
+				pb += b;
+		}
+		int min_solved = pa < pb ? pa : pb;
+		int max_solved = pa > pb ? pa : pb;
+		cout << ((max*min_solved) + (min*max_solved)) << endl; ;
+		n--;
+		
+
+	}
+	return 0 ;
+}
