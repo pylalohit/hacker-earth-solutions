@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int i,j=0,k=0;
+    char str[21];
+    cin>>str;
+    for(i=0;i<20;i++)
+    {
+        if(str[i]=='z'||str[i]=='Z')
+        {
+            k++;
+        }
+        if(str[i]=='o'||str[i]=='O')
+        {
+            j++;
+        }
+    }
+    j == k*2 ? cout<< "Yes":cout<<"No";
+    return 0;
+    
+}
