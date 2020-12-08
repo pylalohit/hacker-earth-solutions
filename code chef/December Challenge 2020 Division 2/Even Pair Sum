@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int t;
+    cin >> t;
+    while(t--)
+    {
+        long long int a,b,ao=0,ae=0,be=0,bo=0,res = 0;
+        cin >> a >>b ;
+        ae = a&1==0 ? a/2 :(a/2);
+        ao = a&1==1 ? (a/2)+1 :a/2;
+        be = b&1==0 ? b/2 :(b/2);
+        bo = b&1==1 ? (b/2)+1 :b/2;
+        res = (ae*be)+(ao*bo);
+        cout<<res<<"\n";
+       
+    }
+	return 0;
+}
