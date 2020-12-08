@@ -1,0 +1,28 @@
+#include <iostream>
+#include<cmath>
+using namespace std;
+
+int main() {
+    int t;
+    cin>>t;
+    while(t--)
+    {
+        int  age = 0,n=0;
+       int risk = 0 ,not_risk = 0;
+      int day1,day2;
+        cin >>age>>n;
+        int ages[age],i=0;
+        for (i=0;i<age;i++)
+        {
+            cin>>ages[i];
+            ((ages[i] >= 80) || (ages[i] <=9)) ? risk +=1:not_risk+=1; 
+        }
+    day1 = (risk%n==0) ? risk/n:(risk/n)+1;
+        day2 = (not_risk%n==0) ? not_risk/n:(not_risk/n)+1;
+       
+        cout<<day1+day2<<"\n";
+        
+    }
+	// your code goes here
+	return 0;
+}
