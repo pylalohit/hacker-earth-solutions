@@ -1,1 +1,1 @@
-# hacker-earth-solutions
+# hacker-earth-solutions and code chef solutions
