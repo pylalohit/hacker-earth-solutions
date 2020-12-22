@@ -1,0 +1,32 @@
+#include<iostream>
+using namespace std;
+int main() {
+    int t,motu=0,patlu=0,i;
+    cin>>t;
+    for (i=0;i<100000000;i++)
+    {
+        if(t > 0)
+        {
+            patlu = i;
+            t -=patlu;
+            if(t <= 0)
+            {
+                cout<<"Patlu";
+                break;
+            }
+        }
+        if( t > 0)
+        {
+            motu = 2*i;
+            t -= motu;
+            if(t <= 0)
+            {
+                cout<<"Motu";
+                break;
+            }
+        }
+        
+    }
+   
+    return 0;
+}
